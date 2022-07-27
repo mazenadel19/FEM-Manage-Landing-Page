@@ -1,26 +1,3 @@
-.container {
-  --max-width: 1110px;
-  --padding: 1rem;
-
-  /* minimum of the two */
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
-
-  /* margin left and right */
-  margin-inline: auto;
-}
-
-.even-columns {
-  display: grid;
-  gap: 1rem;
-}
-
-@media (min-width: 50em) {
-  .even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
-
 /* utility classes */
 
 .visually-hidden {
@@ -33,6 +10,37 @@
   clip: rect(0 0 0 0);
   white-space: nowrap;
   border: 0;
+}
+
+.container {
+  --max-width: 1110px;
+  --padding: 1rem;
+
+  /* minimum of the two */
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+
+  /* margin left and right */
+  margin-inline: auto;
+}
+
+/* .flow > * + * {
+  outline: 3px solid lime;
+} */
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 3em);
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
 }
 
 .text-primary-400 {
