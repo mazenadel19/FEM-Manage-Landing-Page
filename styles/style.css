@@ -1,3 +1,5 @@
+/* *component classes* */
+
 :root {
   --clr-accent-500: hsl(12, 60%, 45%);
   --clr-accent-400: hsl(12, 88%, 59%);
@@ -67,7 +69,7 @@ p:not([class]) {
   max-width: 32ch;
 }
 
-p[data-width='wide'] {
+p[data-width="wide"] {
   max-width: 42ch;
 }
 
@@ -184,4 +186,29 @@ p[data-width='wide'] {
   .mobile-nav-toggle .icon-close {
     display: none;
   }
+}
+
+/* cta */
+
+.cta {
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+}
+@media (min-width: 50em) {
+  .cta {
+    text-align: left;
+  }
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-image: url("../assets/images/bg-tablet-pattern.svg"),
+    url("../assets/images/bg-tablet-pattern.svg");
+  background-position: -15rem -5rem, 80rem -42rem;
+  background-repeat: no-repeat;
+  opacity: 0.1;
 }
