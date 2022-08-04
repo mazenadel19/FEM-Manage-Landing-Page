@@ -20,8 +20,9 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="#"
-            ><img src="./assets/images/logo.svg" alt="Magage logo"
-          /></a>
+            > <svg class="logo" width="146" height="24">
+                <use xlink:href="./assets/images/logo.svg#logo"></use></svg
+            ></a>
 
           <button
             class="mobile-nav-toggle"
@@ -165,23 +166,66 @@
       </section>
     </main>
 
-    <footer class="bg-neutral-900 text-neutral-100 padding-block-700">
+    <footer class="primary-footer | bg-neutral-900 text-neutral-100 padding-block-700">
       <div class="container">
-        <div class="even-columns">
-          <div>
-            <a href="#"><img src="./assets/images/logo.svg" alt="logo" /></a>
-            <ul role="list" aria-label="Social links">
-              <li><a aria-label="facebook" href="#"></a></li>
-              <li><a aria-label="youtube" href="#"></a></li>
-              <li><a aria-label="twitter" href="#"></a></li>
-              <li><a aria-label="pinterest" href="#"></a></li>
-              <li><a aria-label="instagram" href="#"></a></li>
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-logo-social">
+            <a href="#" aria-label="home">
+              <svg class="logo" width="146" height="24">
+                <use xlink:href="./assets/images/logo.svg#logo"></use></svg
+            ></a>
+            <ul role="list" class="social-list" aria-label="Social links">
+              <li>
+                <a aria-label="facebook" href="#"
+                  ><svg class="social-icon">
+                    <use
+                      xlink:href="./assets/images/social-icons.svg#icon-facebook"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a aria-label="youtube" href="#"
+                  ><svg class="social-icon">
+                    <use
+                      xlink:href="./assets/images/social-icons.svg#icon-youtube"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a aria-label="twitter" href="#"
+                  ><svg class="social-icon">
+                    <use
+                      xlink:href="./assets/images/social-icons.svg#icon-twitter"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a aria-label="pinterest" href="#"
+                  ><svg class="social-icon">
+                    <use
+                      xlink:href="./assets/images/social-icons.svg#icon-pinterest"
+                    ></use></svg
+                ></a>
+              </li>
+              <li>
+                <a aria-label="instagram" href="#"
+                  ><svg class="social-icon">
+                    <use
+                      xlink:href="./assets/images/social-icons.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
             </ul>
           </div>
 
-          <div>
+          <div class="primary-footer-nav">
             <nav class="footer-nav">
-              <ul aria-label="Footer" class="flow" style="--flow-spacer: 1em">
+              <ul
+                aria-label="Footer"
+                class="flow"
+                style="--flow-spacer: 1em"
+                role="list"
+              >
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Products</a></li>
@@ -193,10 +237,10 @@
             </nav>
           </div>
 
-          <div>
-            <form >
+          <div class="primary-footer-form">
+            <form>
               <input type="email" />
-              <button type="button">Go</button>
+              <button class="button" type="button" data-shadow="none">Go</button>
             </form>
             <p>Copyright 2020. All Rights Reserved</p>
           </div>
