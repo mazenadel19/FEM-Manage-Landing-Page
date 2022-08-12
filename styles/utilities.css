@@ -14,10 +14,10 @@
 
 .container {
   --max-width: 1110px;
-  --padding: 1rem;
+  --container-padding: 1rem;
 
   /* minimum of the two */
-  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2));
 
   /* margin left and right */
   margin-inline: auto;
@@ -46,6 +46,23 @@
 @media (min-width: 50em) {
   .justify-self-end-md {
     justify-self: end;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center p {
+  margin-inline: auto;
+}
+
+@media (max-width: 50em) {
+  .text-center-sm-only {
+    text-align: center;
+  }
+  .text-center-sm-only p {
+    margin-inline: auto;
   }
 }
 
@@ -127,6 +144,10 @@
 
 .padding-block-900 {
   padding-block: var(--size-900);
+}
+
+.margin-bottom-700 {
+  margin-block-end: var(--size-700);
 }
 
 .display-sm-none {
