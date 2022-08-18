@@ -5,12 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+
+    <!--Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- A11Y Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
+
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/utilities.css" />
@@ -19,10 +29,10 @@
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#"
-            > <svg class="logo" width="146" height="24">
-                <use xlink:href="./assets/images/logo.svg#logo"></use></svg
-            ></a>
+          <a href="#">
+            <svg class="logo" width="146" height="24">
+              <use xlink:href="./assets/images/logo.svg#logo"></use></svg
+          ></a>
 
           <button
             class="mobile-nav-toggle"
@@ -88,7 +98,10 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div class="flow text-center-sm-only margin-bottom-700" style="--flow-spacer: 1.5rem">
+            <div
+              class="flow text-center-sm-only margin-bottom-700"
+              style="--flow-spacer: 1.5rem"
+            >
               <h2 class="fs-secondary-heading fw-bold">
                 What’s different about Manage?
               </h2>
@@ -103,7 +116,9 @@
               <ul class="numbered-items | flow" role="list">
                 <li>
                   <div class="flow" style="--flow-spacer: 1em">
-                    <h3 class="numbered-items__title | fs-600 fw-bold">Track company-wide progress</h3>
+                    <h3 class="numbered-items__title | fs-600 fw-bold">
+                      Track company-wide progress
+                    </h3>
                     <p data-width="wide" class="numbered-items__body">
                       See how your day-to-day tasks fit into the wider vision.
                       Go from tracking progress at the milestone level all the
@@ -114,7 +129,9 @@
                 </li>
                 <li>
                   <div class="flow" style="--flow-spacer: 1em">
-                    <h3 class="numbered-items__title | fs-600 fw-bold">Advanced built-in reports</h3>
+                    <h3 class="numbered-items__title | fs-600 fw-bold">
+                      Advanced built-in reports
+                    </h3>
                     <p data-width="wide" class="numbered-items__body">
                       Set internal delivery estimates and track progress toward
                       company goals. Our customisable dashboard helps you build
@@ -141,10 +158,56 @@
         </div>
       </section>
 
-      <section class="carousel | padding-block-700">
+      <section class="carousel | padding-block-700 text-center">
         <!--  using pipe to visual seprate utility classes from components classes -->
         <h2 class="fs-secondary-heading fw-bold">What they’ve said</h2>
         <!-- Carousel here -->
+        <ul class="slider">
+          <li>
+            <img src="/assets/images/avatar-anisha.png" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Anisha Li</h3>
+              <p data-width="wide">
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="/assets/images/avatar-ali.png" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Ali Bravo</h3>
+              <p data-width="wide">
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="/assets/images/avatar-richard.png" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Richard Watts</h3>
+              <p data-width="wide">
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="/assets/images/avatar-shanai.png" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Shanai Gough</h3>
+              <p data-width="wide">
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </li>
+        </ul>
         <button class="button">Get Started</button>
       </section>
 
@@ -166,7 +229,9 @@
       </section>
     </main>
 
-    <footer class="primary-footer | bg-neutral-900 text-neutral-100 padding-block-700">
+    <footer
+      class="primary-footer | bg-neutral-900 text-neutral-100 padding-block-700"
+    >
       <div class="container">
         <div class="primary-footer-wrapper">
           <div class="primary-footer-logo-social">
@@ -240,7 +305,9 @@
           <div class="primary-footer-form">
             <form>
               <input type="email" />
-              <button class="button" type="button" data-shadow="none">Go</button>
+              <button class="button" type="button" data-shadow="none">
+                Go
+              </button>
             </form>
             <p>Copyright 2020. All Rights Reserved</p>
           </div>
@@ -248,6 +315,10 @@
       </div>
     </footer>
 
+    <!-- A11Y Slider -->
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+
+    <!-- Custom Script -->
     <script type="module" src="./scripts/script.js"></script>
   </body>
 </html>
