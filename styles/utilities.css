@@ -150,6 +150,10 @@
   margin-block-end: var(--size-700);
 }
 
+.margin-start-900 {
+  margin-block-start: var(--size-900);
+}
+
 .mx-auto {
   margin-inline: auto;
 }

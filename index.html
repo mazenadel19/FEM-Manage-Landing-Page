@@ -94,11 +94,17 @@
         </div>
       </section>
 
-      <section class="sales-points |  padding-block-900">
+      <section class="sales-points | padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div
-              class="sales-points__blog | flow text-center-sm-only margin-bottom-700"
+              class="
+                sales-points__blog
+                |
+                flow
+                text-center-sm-only
+                margin-bottom-700
+              "
               style="--flow-spacer: 1.5rem"
             >
               <h2 class="fs-secondary-heading fw-bold">
@@ -157,7 +163,7 @@
         </div>
       </section>
 
-      <section class="carousel | padding-block-700 text-center">
+      <section class="carousel | padding-block-900 text-center">
         <!--  using pipe to visual seprate utility classes from components classes -->
         <h2 class="fs-secondary-heading fw-bold">What they’ve said</h2>
         <!-- Carousel here -->
@@ -210,7 +216,16 @@
         <button class="button">Get Started</button>
       </section>
 
-      <section class="cta | bg-accent-400 text-neutral-100 padding-block-900">
+      <section
+        class="
+          cta
+          |
+          margin-start-900
+          bg-accent-400
+          text-neutral-100
+          padding-block-900
+        "
+      >
         <!-- component | utility classes -->
         <div class="container">
           <div class="even-columns vertical-align-center">
@@ -232,12 +247,12 @@
       class="primary-footer | bg-neutral-900 text-neutral-100 padding-block-700"
     >
       <div class="container">
-        <div class="primary-footer-wrapper">
-          <div class="primary-footer-logo-social">
-            <a href="#" aria-label="home">
-              <svg class="logo" width="146" height="24">
-                <use xlink:href="./assets/images/logo.svg#logo"></use></svg
-            ></a>
+        <div class="primary-footer__wrapper">
+          <a href="#" aria-label="home" class="primary-footer__logo">
+            <svg class="logo" width="146" height="24">
+              <use xlink:href="./assets/images/logo.svg#logo"></use></svg
+          ></a>
+          <div class="primary-footer__social">
             <ul role="list" class="social-list" aria-label="Social links">
               <li>
                 <a aria-label="facebook" href="#"
@@ -282,7 +297,7 @@
             </ul>
           </div>
 
-          <div class="primary-footer-nav">
+          <div class="primary-footer__nav-wrapper">
             <nav class="footer-nav">
               <ul
                 aria-label="Footer"
@@ -301,15 +316,13 @@
             </nav>
           </div>
 
-          <div class="primary-footer-form">
-            <form>
-              <input type="email" />
-              <button class="button" type="button" data-shadow="none">
-                Go
-              </button>
-            </form>
-            <p>Copyright 2020. All Rights Reserved</p>
-          </div>
+          <form class="primary-footer__form">
+            <input type="email" />
+            <button class="button" type="button" data-shadow="none">Go</button>
+          </form>
+          <p class="primary-footer__copyright">
+            Copyright 2020. All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>
