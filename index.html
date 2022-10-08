@@ -41,16 +41,12 @@
           >
             <img
               src="./assets/images/icon-close.svg"
-              class="icon-close"
-              alt=""
-              srcset=""
+              class="icon-close display-none"
               aria-hidden="true"
             />
             <img
               src="./assets/images/icon-hamburger.svg"
               class="icon-hamburger"
-              alt=""
-              srcset=""
               aria-hidden="true"
             />
             <span class="visually-hidden">Menu</span>
@@ -66,7 +62,7 @@
             </ul>
           </nav>
 
-          <button class="button | display-sm-none display-md-inline-flex">
+          <button class="button | display-none display-md-inline-flex">
             Get Started
           </button>
         </div>
@@ -74,7 +70,7 @@
     </header>
 
     <main>
-      <section class="padding-block-900">
+      <section class="hero | text-center-sm-only padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div class="flow">
@@ -87,19 +83,22 @@
               </p>
               <button class="button">Get Started</button>
             </div>
-
-            <div>
-              <img src="./assets/images/illustration-intro.svg" alt="graphs" />
+            <div class="hero__image">
+              <img
+                class="mx-auto"
+                src="./assets/images/illustration-intro.svg"
+                alt="graphs"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="padding-block-900">
+      <section class="sales-points |  padding-block-900">
         <div class="container">
           <div class="even-columns">
             <div
-              class="flow text-center-sm-only margin-bottom-700"
+              class="sales-points__blog | flow text-center-sm-only margin-bottom-700"
               style="--flow-spacer: 1.5rem"
             >
               <h2 class="fs-secondary-heading fw-bold">
